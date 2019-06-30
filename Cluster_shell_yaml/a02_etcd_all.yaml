@@ -1,0 +1,12 @@
+- hosts: [master]
+  tasks:      
+    - name: 安装ETCD_master
+      shell: sh /root/K8s/Cluster_shell_yaml/etcd_master.sh
+- hosts: [slave]
+  tasks:      
+    - name: 安装ETCD_slave
+      shell: sh /root/K8s/Cluster_shell_yaml/etcd_node_all.sh
+- hosts: [all]
+  tasks:      
+    - name: 部署Flannel网络
+      shell: sh /root/K8s/Cluster_shell_yaml/Flannel_all.sh  

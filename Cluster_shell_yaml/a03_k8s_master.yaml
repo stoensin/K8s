@@ -1,0 +1,4 @@
+- hosts: [master]
+  tasks:      
+    - name: 安装master节点_k8s_a2
+      shell: sh /root/K8s/Cluster_shell_yaml/master_k8s_install.sh
