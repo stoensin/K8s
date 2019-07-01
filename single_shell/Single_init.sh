@@ -660,11 +660,11 @@ _approve_csr
 
 
 # #加入环境变量
-# cat >>/root/.bash_profile  << 'EOF'
-# net=$(ls  -l /etc/sysconfig/network-scripts/ifcfg-*|awk   -F  "-" '{print  $NF}'|grep -v lo)
-# IP=$(for var in $net;do ifconfig $var 2>/dev/null;done|grep inet|grep -v  inet6|awk  '{print $2}')
-# alias kubectl="/usr/local/bin/kubectl -s http://${IP}:19090"
-# EOF
+cat >>/root/.bash_profile  << 'EOF'
+net=$(ls  -l /etc/sysconfig/network-scripts/ifcfg-*|awk   -F  "-" '{print  $NF}'|grep -v lo)
+IP=$(for var in $net;do ifconfig $var 2>/dev/null;done|grep inet|grep -v  inet6|awk  '{print $2}')
+alias kubectl="/usr/local/bin/kubectl -s http://${IP}:19090"
+EOF
 
 
 
