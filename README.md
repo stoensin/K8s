@@ -60,7 +60,7 @@ cd K8s/ && sh install.sh
 
 
 #### 使用截图
-![输入图片说明](https://images.gitee.com/uploads/images/2019/0629/170753_e0ec9cb9_525507.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0701/095702_04b50cfc_525507.png "屏幕截图.png"
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0305/151653_e76832a6_525507.png "QQ图片20190305151528.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0305/151703_5da78708_525507.png "QQ图片20190305151533.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0305/151710_92e5f5ba_525507.png "QQ图片20190305151537.png")
