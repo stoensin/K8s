@@ -12,8 +12,8 @@ IP=$(for var in $net;do ifconfig $var 2>/dev/null;done|grep inet|grep -v  inet6|
 KUBE_CONF=/etc/kubernetes
 FLANNEL_CONF=$KUBE_CONF/flannel.conf
 mkdir -p $KUBE_CONF
-tar -xvzf /root/Installation/k8s/flannel-v0.11.0-linux-amd64.tar.gz  -C  /root/Installation/k8s/
-cd  /root/Installation/k8s/
+tar -xvzf /root/K8s/Software_package/flannel-v0.11.0-linux-amd64.tar.gz  -C  /root/K8s/Software_package/
+cd  /root/K8s/Software_package/
 mv {flanneld,mk-docker-opts.sh} /usr/local/bin/
 # Check whether etcd cluster is healthy.
 etcdctl \
