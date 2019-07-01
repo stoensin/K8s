@@ -9,6 +9,7 @@ IP=$(for var in $net;do ifconfig $var 2>/dev/null;done|grep inet|grep -v  inet6|
 ######
 #关闭swap
 swapoff -a
+ansible all -m shell  -a "sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab  -a" >/dev/null
 
 #etcd,k8s单机版
 rpm -aq | grep net-tools   ||  yum install net-tools -y  >   /dev/null

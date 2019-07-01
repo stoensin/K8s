@@ -14,6 +14,7 @@ ansible  all  -m shell  -a  "systemctl disable firewalld.service"
 ansible  all  -m shell  -a  "systemctl  is-active  firewalld.service" >/dev/null  && echo "防火墙关闭失败,请检查服务器" >>/root/K8s/Cluster_shell_yaml/err_check.log
 ##>>>swap交换分区关闭
 ansible all -m shell  -a " swapoff  -a" >/dev/null
+ansible all -m shell  -a "sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab  -a" >/dev/null
 #########################系统防火墙 SELinux关闭##############################
 yum_repo=1
 yum_status=93
