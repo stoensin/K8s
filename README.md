@@ -22,7 +22,7 @@ rm -fv  K8s/Software_package/kubernetes-server-linux-amd64.tar.a*
 
 
 ```
-yum install wget  unzip  -y ;wget  https://gitee.com/q7104475/K8s/repository/archive/master.zip  && unzip  master.zip&&  cd K8s/ && sh install.sh
+yum install wget  unzip  -y ;wget  https://codeload.github.com/szbjb/K8s/zip/master  && unzip    master* && mv  -v  K8s-master  K8s  && cd K8s/ && sh install.sh
 
 ```
 
