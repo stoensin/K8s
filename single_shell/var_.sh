@@ -389,10 +389,16 @@ if [ $exitstatus = 0 ]
                     case $OPTION in
                         1) 
                        sh +x     /root/K8s/Cluster_shell_yaml/k8s-init.sh
-                       sh  +x      /root/K8s/single_shell/Single_init.sh  
+                       sh  +x      /root/K8s/single_shell/Single_init.sh
+                       echo  "安装k8s,Wed界面dashboard,端口号42345"
+                       sh  +x       /root/K8s/single_shell/dashboard.sh  
+                       whiptail --title "kubernetes_v1.13.2单机版安装完毕" --msgbox "K8s单机版安装完毕,web控制界面dashboard地址为\n\nhttp://IP:42345" 12 80
+                       clear
+source   /root/.bash_profile
 kubectl  get csr
  kubectl  get cs
  kubectl  get node
+ 
                        
                         ;;  
                         2) 

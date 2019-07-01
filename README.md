@@ -81,3 +81,6 @@ cd K8s/ && sh install.sh
 
 更新日志
 ===
+2019-7-1
+新增单机版 web图形化控制台dashboard
+K8s单机版安装完毕,web控制界面dashboard地址为                           http://IP:42345
