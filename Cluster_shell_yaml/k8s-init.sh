@@ -10,8 +10,8 @@ tar  -czvPf /etc/yum.repos.d/yum_repo_bak.tar.gz /etc/yum.repos.d/*
 rm -f  /etc/yum.repos.d/*.repo
 > /etc/yum.repos.d/aios.repo 
 cat >>/etc/yum.repos.d/aios.repo <<EOF
-[Aios]
-name=Aios
+[K8s]
+name=K8s
 baseurl=file:///root/K8s/yum
 enabled=1
 gpgcheck=0
